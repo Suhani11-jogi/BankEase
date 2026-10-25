@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-purple: #7755C9;
+    --deep-purple: #4B347F;
+    --pastel-lavender: #F3EEFF;
+    --soft-purple: #DCD0FA;
+    --white: #FFFFFF;
+    --off-white: #F8F7FC;
+    --primary-text: #272238;
+    --secondary-text: #777084;
+    --subtle-border: #E5E0EF;
+  }
+
+  body {
+    background-color: #F8F7FC;
+    color: #272238;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Accessible focus styling */
+:focus-visible {
+  outline: 2px solid #7755C9;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F7FC;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCD0FA;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7755C9;
+}
+
+/* Pulse animation for voice listening */
+@keyframes voice-wave {
+  0%, 100% {
+    transform: scaleY(0.4);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-voice-1 {
+  animation: voice-wave 1s ease-in-out infinite;
+}
+.animate-voice-2 {
+  animation: voice-wave 1s ease-in-out 0.2s infinite;
+}
+.animate-voice-3 {
+  animation: voice-wave 1s ease-in-out 0.4s infinite;
+}
+.animate-voice-4 {
+  animation: voice-wave 1s ease-in-out 0.1s infinite;
+}
+.animate-voice-5 {
+  animation: voice-wave 1s ease-in-out 0.3s infinite;
+}

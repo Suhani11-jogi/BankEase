@@ -1,0 +1,6 @@
+{
+  "name": "BankEase — Banking, Made Easier",
+  "description": "A modern, accessible banking assistance platform simplifying banking procedures, voice queries, guided forms, and fraud awareness for everyday users.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

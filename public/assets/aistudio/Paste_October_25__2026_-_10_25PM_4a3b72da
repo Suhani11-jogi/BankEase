@@ -1,0 +1,668 @@
+# PROJECT: BankEase — Banking, Made Easier
+## Build a Complete, Professional, Responsive Banking Assistance Website
+
+Act as a senior UI/UX designer, frontend engineer, and product designer specializing in premium fintech startups. Build a complete, polished, responsive website called **BankEase — Banking, Made Easier**.
+
+The goal is to create an impressive, modern, professional website that simplifies banking procedures for everyday users, especially people who find digital banking complicated, struggle with banking terminology, have difficulty completing forms, or prefer voice-based assistance.
+
+**Important: Build the complete frontend first. Do not require a bank backend, Supabase, or live bank integration for this initial version.** Implement the frontend interactions wherever possible, and clearly distinguish working features from simulated functionality.
+
+Do not create only a landing page, a static UI mockup, or a generic AI chatbot template. Build the complete website with all the pages, navigation, forms, interactions, and responsive layouts described below.
+
+---
+
+# 1. DESIGN IDENTITY AND VISUAL DIRECTION
+
+BankEase must look like a premium fintech startup that could confidently be presented at a college project demonstration, hackathon, or product showcase.
+
+### Color palette
+
+Use a consistent pastel-purple-and-white design system:
+
+- Primary purple: #7755C9
+- Deep purple: #4B347F
+- Pastel lavender: #F3EEFF
+- Soft purple: #DCD0FA
+- White: #FFFFFF
+- Off-white background: #F8F7FC
+- Primary text: #272238
+- Secondary text: #777084
+- Subtle borders: #E5E0EF
+- Success and warning colors only where semantically necessary.
+
+Use purple for primary buttons, selected navigation, important actions, and brand accents. Use white and off-white for most surfaces, with lavender for selected cards, subtle highlights, and section backgrounds.
+
+### Visual style
+
+- Minimal, elegant, clean, and professional.
+- Premium SaaS and fintech startup aesthetic.
+- Excellent typography, spacing, alignment, and visual hierarchy.
+- Use a modern sans-serif font such as Inter or a similar clean typeface.
+- Rounded corners should be consistent and restrained.
+- Use subtle borders and minimal shadows. Avoid unnecessary shadows, glowing effects, excessive gradients, glassmorphism, and decorative clutter.
+- Use clean line icons with a consistent style.
+- Use subtle hover and focus transitions, not excessive animations.
+- Use professional illustrations or tasteful CSS-based visual elements only where they improve the experience.
+- Avoid generic AI-generated-looking layouts, oversized empty areas, repetitive cards, and excessive purple backgrounds.
+- Maintain consistent spacing, button styles, typography, and component design across every page.
+- Ensure strong text contrast and clear focus states.
+
+The website must look thoughtfully designed, not like a collection of unrelated templates.
+
+---
+
+# 2. ABSOLUTE REQUIREMENT: NEVER DISPLAY BANK ACCOUNT BALANCES
+
+BankEase is a banking assistance and navigation platform, not an account balance dashboard.
+
+Do not display:
+- Bank account balances.
+- Available balances or account funds.
+- Total money, net worth, or financial summary cards.
+- Fake bank transaction amounts or fabricated financial account data.
+- Any section that suggests BankEase is connected to the user's bank account.
+
+The dashboard must focus on assistance, banking services, forms, saved activities, accessibility, and safety.
+
+BankEase's own profile and login system must be clearly separate from a user's actual bank login.
+
+---
+
+# 3. WEBSITE ARCHITECTURE AND NAVIGATION
+
+Create the following pages with proper routing and working navigation.
+
+## Page 1: Landing Page
+
+Create an impressive first impression.
+
+Include:
+- BankEase logo and brand name.
+- Navigation links: Home, Services, How It Works, About, and Login.
+- A prominent Get Started button.
+- Hero heading: "Banking, Made Easier."
+- Supporting text explaining that BankEase helps users understand banking services, complete forms with guidance, and navigate banking procedures in simple language.
+- Primary CTA: "Get Started".
+- Secondary CTA: "Explore Services".
+- A premium visual preview of the BankEase assistant interface.
+- A section introducing the major benefits of BankEase.
+- A section showing how BankEase works in three or four simple steps.
+- A section highlighting voice assistance, guided forms, banking services, and fraud awareness.
+- A clear final CTA and a professional footer with navigation, privacy, help, and contact links.
+
+Avoid making the landing page too long or text-heavy. Use an editorial layout, well-spaced sections, and a clear visual hierarchy.
+
+## Page 2: Login
+
+Create a polished login page using the same purple-and-white design system.
+
+Include:
+- Email field.
+- Password field.
+- Show/hide password control.
+- Remember-me option, if appropriate.
+- Forgot password link.
+- Login button.
+- Link to create an account.
+- Proper validation and helpful error messages.
+- A subtle illustration or visual element that complements the design.
+
+Implement a working frontend demo login flow if no authentication backend is configured. Make it clear in the code and documentation that this is demo authentication, not secure production authentication.
+
+Do not pretend that a real email verification or password reset has happened unless implemented.
+
+## Page 3: Sign Up
+
+Include:
+- Full name.
+- Email address.
+- Password and confirm password.
+- Password visibility controls.
+- Terms and privacy acknowledgement.
+- Create Account button.
+- Link to Login.
+- Required-field validation.
+- Email format validation.
+- Password matching and reasonable password validation.
+- Clear success and error states.
+
+For the frontend prototype, allow a clearly labelled demo registration flow. Do not claim that user data is securely stored in a real backend.
+
+After successful demo login or registration, navigate to the main dashboard.
+
+## Page 4: Main Dashboard
+
+Create a premium, personalized dashboard after login.
+
+Include:
+- A welcome message such as "Hello, [Name]" where available.
+- A short, friendly explanation of what BankEase can help with.
+- A prominent assistant input area with a microphone button.
+- Suggested prompts such as:
+  - "I want to open a bank account."
+  - "How do I update my address?"
+  - "I need to request a cheque book."
+  - "How can I get my bank statement?"
+  - "How do I apply for a loan?"
+- A Banking Services section.
+- A Forms & Applications shortcut.
+- A Voice Assistance shortcut.
+- A Government Schemes shortcut.
+- A Fraud Awareness shortcut.
+- A Recent Activities section using honest demo data if needed.
+- Useful next steps and banking safety tips.
+
+Use a clean grid and a carefully balanced layout. Make the assistant the main focal point without overwhelming the user with too many cards.
+
+Do not include any account balance or financial summary widget.
+
+## Page 5: AI Banking Assistant
+
+This is one of the most important pages.
+
+Build a proper conversational interface, not just a decorative chat window.
+
+Include:
+- A clean conversation panel.
+- A clear assistant identity.
+- A message input field.
+- A microphone button for voice input.
+- A send button.
+- A stop-listening button or equivalent when recording.
+- A visible listening state.
+- A way to cancel voice input.
+- A way to edit recognized text before sending.
+- Suggested banking questions.
+- Text responses with readable formatting.
+- A speaker button beside assistant responses to read them aloud.
+- A stop-speaking control.
+- Clear loading and error states where appropriate.
+- A New Conversation control.
+- A way to return to the dashboard.
+
+Support both typing and speaking. Never force the user to use voice.
+
+The assistant should help with the full range of common banking questions, not only KYC.
+
+Example questions:
+- "How can I open a savings account?"
+- "What documents are usually required to open an account?"
+- "I want to change my registered mobile number."
+- "How do I add or change my nominee?"
+- "How can I apply for a debit card?"
+- "How do I request a cheque book?"
+- "How can I download a bank statement?"
+- "How can I stop payment on a cheque?"
+- "How do I close a bank account?"
+- "How can I complain about a failed transaction?"
+- "What should I do if my ATM card is lost?"
+- "How do I apply for a personal loan?"
+- "What is the difference between a savings account and a current account?"
+- "How can I identify a banking scam?"
+
+Responses should be simple, respectful, practical, and step-by-step.
+
+Banking procedures vary by bank. Where the exact bank or procedure matters, ask a clarifying question or explain that requirements may differ. Do not invent official policies, form numbers, fees, or deadlines.
+
+If no AI API is connected, implement a clearly understood demo assistant using local predefined responses and sensible keyword-based routing. Organize the code so a real AI service can be connected later. Do not label the demo assistant as a fully functioning AI model.
+
+## Page 6: All Banking Services
+
+Create a dedicated page containing organized service categories. This page must demonstrate that BankEase covers overall banking assistance.
+
+### A. Account Services
+- Savings account opening guidance.
+- Current account opening guidance.
+- Account maintenance.
+- Account closure.
+- Joint account procedures.
+- Nominee addition, update, or removal guidance.
+
+### B. Debit Card and ATM Services
+- Debit card application.
+- Lost or damaged card guidance.
+- Card replacement.
+- PIN generation or reset guidance.
+- Card blocking guidance.
+- ATM-related complaints.
+
+### C. Cheque and Passbook Services
+- Cheque book requests.
+- Stop-payment guidance.
+- Cheque-related complaints.
+- Passbook requests or updates.
+- Bank statement guidance.
+
+### D. Personal Information Updates
+- Address change.
+- Registered mobile number change.
+- Email update.
+- Name correction or change guidance.
+- Signature update guidance.
+- KYC and re-KYC guidance.
+
+### E. Payments and Transaction Assistance
+- Failed transaction guidance.
+- UPI-related problem guidance.
+- Unauthorized transaction reporting steps.
+- Fund-transfer procedure explanations.
+- Payment dispute guidance.
+
+Do not show balances or make actual transfers.
+
+### F. Loans and Deposits
+- Personal loan application guidance.
+- Education loan guidance.
+- Home loan procedure guidance.
+- Fixed deposit information.
+- Recurring deposit information.
+- Application document checklists.
+
+### G. Complaints and Other Services
+- Complaint filing guidance.
+- Customer-care navigation.
+- Escalation and grievance procedure guidance.
+- Account closure.
+- Other common bank-specific requests.
+
+Each service should be represented by a concise, consistent UI card or list item. Clicking a service should open a meaningful detail page, modal, or guided workflow rather than doing nothing.
+
+Include search and category filters so users can quickly find the service they need.
+
+Do not suggest that every bank offers identical services or procedures.
+
+## Page 7: Forms & Applications Centre
+
+This is a major part of BankEase. Do not reduce this page to KYC forms.
+
+Create a searchable, organized form assistance centre covering common banking forms and requests, including:
+
+- Savings account opening forms.
+- Current account opening forms.
+- Account closure forms.
+- Address change forms.
+- Mobile number and email update forms.
+- Nominee addition or change forms.
+- Debit card application and replacement forms.
+- Card blocking request guidance.
+- Cheque book request forms.
+- Stop-payment request forms.
+- Passbook-related requests.
+- Bank statement requests.
+- KYC and re-KYC forms.
+- Loan application forms.
+- Fixed deposit and recurring deposit forms.
+- Complaint and grievance forms.
+- Transaction dispute forms.
+- Other common banking service request forms.
+
+Include:
+- Search bar.
+- Category filters.
+- Clear form titles and short descriptions.
+- Required document checklists.
+- A "View Details" or "Start Form" action.
+- Step-by-step form assistance.
+- Explain-this-field help.
+- Required-field validation.
+- Review-before-continuing screen.
+- Clear next-step guidance.
+- Download or official portal redirection only where actually implemented and appropriate.
+
+Use clearly labelled sample/demo forms where official forms are not available.
+
+Do not fabricate official bank documents, official bank branding, submission receipts, or confirmation numbers.
+
+### Guided form workflow
+
+Implement a reusable guided form experience:
+1. Select the banking service or form.
+2. Read the explanation and requirements.
+3. Review the document checklist.
+4. Enter sample or user-provided details in a guided form.
+5. Explain confusing fields using plain language.
+6. Validate required fields.
+7. Display a review screen.
+8. Show the available next step.
+
+Do not collect real banking passwords, OTPs, PINs, CVVs, or unnecessary sensitive information.
+
+Since this is a frontend-first prototype, saving and submission may be demo-only. Never claim that the form has reached a bank or been approved unless a genuine authorized integration supports that result.
+
+## Page 8: Voice & Language Assistance
+
+Build a dedicated page or accessible panel explaining and demonstrating voice support.
+
+Include:
+- Language selection.
+- A large microphone control.
+- A visible listening indicator.
+- A transcript area.
+- A text alternative.
+- Spoken-response controls.
+- Simple instructions for granting microphone permission.
+- A friendly message if voice recognition is unsupported.
+- A way to stop listening or stop audio playback.
+
+Provide a structure that can support English, Hindi, and Marathi, depending on browser and speech-service capabilities. Do not claim that every language works perfectly in every browser.
+
+This page should also link directly to the AI Banking Assistant.
+
+## Page 9: Government Schemes
+
+Include:
+- Searchable scheme information cards.
+- Scheme name and short description.
+- Eligibility guidance.
+- Document checklist.
+- Application process explanation.
+- Official source or application links when verified and available.
+
+Use clearly labelled example content if verified information is unavailable. Never invent eligibility rules or guarantee approval.
+
+## Page 10: Fraud Awareness & Banking Safety
+
+Include educational sections on:
+- Fake customer-care numbers.
+- Suspicious SMS and email.
+- UPI scams.
+- Phishing links.
+- Requests for OTP, PIN, CVV, or passwords.
+- Lost-card situations.
+- Unauthorized transactions.
+- Steps for reporting suspected fraud through appropriate official channels.
+
+Make this page visually clear, helpful, and reassuring without using frightening or excessive warning graphics.
+
+Do not encourage users to paste passwords, OTPs, PINs, or full card details into BankEase.
+
+## Page 11: My Activities
+
+Create a user activity page that can display:
+- Recent assistant conversations.
+- Saved banking services.
+- Saved form checklists.
+- Draft form progress.
+- Recently viewed services.
+- Reminders or suggested next steps.
+
+Use local demo state or clearly labelled mock records for the prototype.
+
+Do not invent actual bank application statuses. Use accurate labels such as "Draft", "Prepared", or "Needs review" where applicable. Display a bank-submission status only if a genuine integration provides it.
+
+## Page 12: Profile & Settings
+
+Include:
+- User name and email.
+- Edit profile interface.
+- Language preference.
+- Voice preference.
+- Accessibility settings.
+- Password management UI appropriate to the demo's authentication capabilities.
+- Privacy and security information.
+- Help and support links.
+- Logout.
+
+Keep the layout simple and consistent.
+
+---
+
+# 4. VOICE INPUT: IMPLEMENT IT, DO NOT JUST DESIGN IT
+
+Voice interaction is a required feature of the frontend prototype.
+
+A microphone icon alone is not sufficient. Implement actual browser-based voice input wherever supported.
+
+### Required voice input behavior
+
+1. The user opens the assistant.
+2. The user clicks the microphone button.
+3. The website requests microphone permission if needed.
+4. The browser begins speech recognition when supported.
+5. The interface displays a clear "Listening..." state.
+6. The user speaks a banking question.
+7. The recognized words appear in the text input.
+8. The user can edit the recognized text.
+9. The user presses Send to submit the message.
+10. The assistant displays its response.
+11. The user can press the speaker control to hear the answer.
+
+Use the browser's Web Speech API where available:
+- SpeechRecognition or webkitSpeechRecognition for speech-to-text.
+- SpeechSynthesis for text-to-speech.
+
+Handle unsupported browsers, permission denial, empty transcripts, recognition errors, and cancellation gracefully.
+
+Use HTTPS when testing the deployed website because microphone access generally requires a secure context.
+
+Do not claim that the browser's speech recognition is universally supported. Provide a clear typing fallback.
+
+### Voice languages
+
+Provide a language selector for English, Hindi, and Marathi.
+
+Use appropriate language identifiers when configuring recognition and speech synthesis. Recognize that actual support depends on the browser, operating system, installed voices, and speech service.
+
+When the language changes, update the recognition configuration and select an appropriate available speech voice when possible.
+
+If a language is unavailable, explain the limitation and allow the user to continue typing.
+
+### Spoken assistant responses
+
+Implement a speaker button for assistant responses. Use browser speech synthesis for the initial version.
+
+Provide:
+- Play response.
+- Stop speaking.
+- A visible indication when audio is playing.
+- Graceful handling if speech synthesis is unavailable.
+
+Prevent overlapping speech when users start another response.
+
+### Voice privacy
+
+Explain that microphone access requires permission. The microphone should only be activated when the user initiates voice input, unless a clearly explained and user-enabled continuous listening mode is later added.
+
+Do not silently record or upload audio.
+
+Do not claim that voice data is stored securely or never leaves the device unless the implementation actually guarantees that.
+
+---
+
+# 5. USER EXPERIENCE AND ACCESSIBILITY
+
+BankEase should be approachable for people who struggle with digital banking.
+
+Implement:
+- Clear language and short instructions.
+- Readable font sizes.
+- Good contrast.
+- Keyboard navigation.
+- Visible focus states.
+- Proper labels for inputs.
+- Accessible buttons and icon descriptions.
+- Helpful validation messages.
+- Clear loading, empty, success, and error states.
+- Text input alternatives for all voice functionality.
+- Responsive layouts that do not require horizontal scrolling.
+
+Do not use overly technical banking terminology without explaining it.
+
+Use a consistent design system for cards, inputs, buttons, modals, page headings, navigation, and feedback messages.
+
+---
+
+# 6. RESPONSIVE DESIGN: DESKTOP, TABLET, AND MOBILE
+
+This requirement is extremely important.
+
+The website must be genuinely responsive, not merely a desktop design squeezed into a mobile screen.
+
+Test and optimize the design for approximately:
+- Small mobile: 320–375px.
+- Standard mobile: 390–430px.
+- Tablet: 768px.
+- Laptop: 1024–1440px.
+- Large desktop: 1600px and above.
+
+### On mobile
+
+- Use a properly aligned responsive layout.
+- No horizontal scrolling.
+- No clipped or overlapping text.
+- No overflowing cards.
+- No buttons extending beyond the viewport.
+- Use readable typography and appropriately sized touch targets.
+- Stack cards vertically or use compact grids when suitable.
+- Adapt the navigation to a clean mobile menu or compact navigation.
+- Ensure the dashboard sidebar becomes a suitable mobile navigation pattern.
+- Keep the microphone and send buttons easy to reach.
+- Ensure the chat input stays within the viewport and does not hide behind the keyboard.
+- Make modals and form workflows fit small screens.
+- Use responsive padding and margins.
+- Keep the logo, headings, form fields, buttons, and icons properly aligned.
+- Ensure the footer wraps naturally.
+- Use responsive images and avoid fixed desktop widths.
+- Respect mobile safe areas where relevant.
+
+### On desktop
+
+- Use a balanced content width.
+- Keep navigation aligned.
+- Use a sidebar for the authenticated dashboard where appropriate.
+- Avoid excessive empty space.
+- Use a clean, professional multi-column layout where it improves usability.
+
+Do not simply scale everything down. Redesign the arrangement appropriately for each screen size.
+
+---
+
+# 7. INTERACTIONS MUST WORK
+
+Implement working frontend interactions wherever possible:
+- Landing-page navigation.
+- Login and demo signup flows.
+- Logout.
+- Password visibility toggles.
+- Form validation.
+- Dashboard service shortcuts.
+- Search and category filters.
+- Banking service detail views.
+- Guided form workflows.
+- Required-field validation.
+- Review-before-continuing flow.
+- Voice input and cancellation.
+- Speech-to-text transcript display.
+- Text-to-speech playback and stop controls.
+- Language selector.
+- Chat send action.
+- Demo assistant responses.
+- New conversation.
+- Save and unsave services where appropriate.
+- Activity list and draft progress using demo/local state.
+- Profile settings UI.
+- Responsive mobile navigation.
+
+Do not create buttons that look functional but do nothing. Every visible interactive element should perform a meaningful action or be clearly labelled as a nonfunctional placeholder.
+
+Persist non-sensitive demo preferences and demo activities locally if useful. Never store real banking credentials or sensitive financial information in browser storage.
+
+---
+
+# 8. FRONTEND ARCHITECTURE
+
+Use a maintainable component-based architecture.
+
+Preferred stack:
+- React.
+- TypeScript.
+- Tailwind CSS or an equivalent consistent styling approach.
+- React Router or another appropriate routing solution.
+- Lucide or another consistent icon library.
+
+If Google AI Studio provides a different compatible project setup, adapt to that setup rather than breaking the environment.
+
+Organize the code into reusable components, page components, shared layouts, utilities, and styles.
+
+Suggested shared components:
+- Header and footer.
+- Dashboard layout and navigation.
+- Service card.
+- Form card.
+- Chat message.
+- Voice input control.
+- Language selector.
+- Form field with contextual help.
+- Modal and confirmation dialog.
+- Empty, loading, and error states.
+
+Keep voice recognition and speech synthesis logic reusable rather than duplicating it across pages.
+
+Do not expose secret API keys in frontend code. Do not add fake API keys or pretend that external services are connected.
+
+Do not require a backend for the initial frontend demo.
+
+If a feature cannot genuinely work without an external service, implement a clear, usable demo state and structure it for future integration.
+
+---
+
+# 9. BANK INTEGRATION: FUTURE SCOPE
+
+The long-term vision is to make banking simpler through a unified assistance interface, potentially connecting to supported banks through authorized integrations.
+
+For this first version:
+- Do not attempt unauthorized access to bank systems.
+- Do not request real bank login credentials.
+- Do not display account balances.
+- Do not perform actual money transfers.
+- Do not claim direct form submission.
+- Do not fabricate bank approval or verification.
+- Do not present demo data as real bank data.
+
+Design the frontend so that official bank links and future authorized integrations can be added later without rebuilding the entire UI.
+
+---
+
+# 10. QUALITY CHECKLIST BEFORE COMPLETION
+
+Before considering the website finished, verify:
+
+1. All specified pages exist and can be navigated to.
+2. Landing page, login, signup, and dashboard are connected.
+3. The design is consistently pastel purple and white.
+4. No account balance or account-funds section appears anywhere.
+5. Banking Services covers many different procedures, not only KYC.
+6. Forms & Applications Centre has diverse form categories.
+7. Voice input uses real browser speech recognition where supported.
+8. Recognized voice appears as editable text.
+9. Spoken responses work where browser speech synthesis is available.
+10. Unsupported voice features have helpful fallbacks.
+11. The chat works with clearly labelled demo responses if no AI service is connected.
+12. Forms validate and show appropriate feedback.
+13. Buttons and navigation work.
+14. The website is responsive on small mobile screens, tablets, and desktop.
+15. No horizontal overflow, broken layouts, or overlapping elements exist.
+16. The interface has minimal shadows and no unnecessary visual clutter.
+17. No false claims are made about bank integration, secure authentication, form submission, or application status.
+18. The website runs successfully in the available development environment.
+
+Fix obvious runtime errors and layout issues before finishing.
+
+---
+
+# FINAL INSTRUCTION
+
+Build the complete BankEase frontend now.
+
+Prioritize a premium, professional, impressive user experience; correct functionality; real browser-based voice input; comprehensive banking services and forms; login and signup; and genuinely responsive mobile layouts.
+
+Do not stop after generating a plan, wireframe, or landing page. Implement the actual website in the available project environment.
+
+After implementation, provide a concise summary of:
+- Pages created.
+- Functional interactions.
+- How to test the microphone and spoken responses.
+- Which features are demo-only.
+- What would require an AI API, backend, authentication service, or authorized bank integration.
+
+The final result should look and feel like a credible fintech startup website named BankEase — Banking, Made Easier.
